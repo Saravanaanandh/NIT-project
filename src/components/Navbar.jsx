@@ -6,7 +6,7 @@ const Navbar = () => {
 
     return (
         <div className={`fixed top-0 left-0 w-full bg-gray-900 text-white z-10 shadow-md`}>
-            <div className="w-full container mx-auto flex justify-between items-center px-6 py-4">
+            <div className="container mx-auto flex justify-between items-center px-6 py-4">
                 
                 {/* Logo Section */}
                 <div className="flex items-center gap-3">
@@ -29,7 +29,17 @@ const Navbar = () => {
                         <BookMarked size={18} /> Book Now
                     </button>
                 </div>
-            </div> 
+            </div>
+            <nav className="px-5 flex text-[11px] justify-between md:hidden">
+                <Link to={'/'} className="hover:text-blue-400 transition">HOME</Link>
+                <Link to={'/destination'} className="hover:text-blue-400 transition">DESTINATION</Link>
+                <Link to={'/gallery'} className="hover:text-blue-400 transition">GALLERY </Link>
+                <Link to={'/package'} className="hover:text-blue-400 transition">PACKAGE</Link>
+                <Link to={'/contact'} className="hover:text-blue-400 transition">CONTACT US</Link>
+                <Link to={'/about'} className="hover:text-blue-400 transition">ABOUT US</Link> 
+            </nav> 
+
+            
         </div>
         
 
